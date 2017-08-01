@@ -11,6 +11,4 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return $app->version();
-});
+$app->get('/devices[/{brand}]', 'DeviceController@get');
