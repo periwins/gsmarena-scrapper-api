@@ -11,4 +11,4 @@
 |
 */
 
-$app->get('/devices[/{brand}]', 'DeviceController@get');
+$app->get('/devices[/{brand}]', 'DeviceController@index');
