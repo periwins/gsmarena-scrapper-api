@@ -34,8 +34,15 @@ class GSMArenaFetcher implements DeviceFetcherContract
 
         $this->client->setClient($guzzleClient);
 
-        // Visit home page
+        $this->visitHomePage();
+    }
+
+    /**
+     * @return Crawler
+     */
+    private function visitHomePage() {
         $this->crawler = $this->client->request('GET', self::URL);
+        return $this->crawler;
     }
 
     /**
@@ -55,9 +62,15 @@ class GSMArenaFetcher implements DeviceFetcherContract
 
     public function getAll()
     {
+        // pass
+    }
+
+    public function getByBrand($brand_url)
+    {
         $devices = array();
-        $this->crawler = $this->visitHomePage();
         $page_count = 1;
+
+        $this->crawler = $this->client->request('GET', $brand_url);
 
         while (true) {
             // Get all links from page
@@ -79,10 +92,5 @@ class GSMArenaFetcher implements DeviceFetcherContract
         }
 
         return $devices;
-    }
-
-    public function getByBrand($brand_name)
-    {
-        // TODO: Implement getByBrand() method.
     }
 }

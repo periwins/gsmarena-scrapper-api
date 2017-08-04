@@ -16,7 +16,8 @@ use Carbon\Carbon;
 class DeviceController extends BaseController
 {
     public function index(DeviceFetcherContract $fetcher, $brand = null) {
-        $result = $fetcher->getBrands();
+        $brands = $fetcher->getBrands();
+        $result = $fetcher->getByBrand( $brands['Samsung'] );
 
         return response()->json($result);
     }

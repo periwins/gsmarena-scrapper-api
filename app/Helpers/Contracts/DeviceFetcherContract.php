@@ -15,5 +15,5 @@ interface DeviceFetcherContract
 
     public function getAll();
 
-    public function getByBrand($brand_name);
+    public function getByBrand($brand_url);
 }
