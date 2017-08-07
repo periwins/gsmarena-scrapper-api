@@ -4,7 +4,10 @@ This is a simple API to scrap gsmarena.com for devices and brands.
 
 ### Dependencies
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+- php >=5.5.9
+- laravel/lumen-framework 5.2
+- vlucas/phpdotenv 2.2
+- fabpot/goutte 3.2
 
 ### Instructions
 
