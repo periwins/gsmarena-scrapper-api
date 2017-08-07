@@ -1,21 +1,32 @@
-## Lumen PHP Framework
+## GSM Arena Scrapper API
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+This is a simple API to scrap gsmarena.com for devices and brands.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
-
-## Official Documentation
+### Dependencies
 
 Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
 
-## Security Vulnerabilities
+### Instructions
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+- `composer install`
+- `php -S localhost:8000 -t public`
+- go to /devices/ on your browser *or* /devices/[brandname]
 
 ### License
 
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+>This program is free software: you can redistribute it and/or modify
+>it under the terms of the GNU General Public License as published by
+>the Free Software Foundation, either version 3 of the License, or
+>(at your option) any later version.
+>
+>This program is distributed in the hope that it will be useful,
+>but WITHOUT ANY WARRANTY; without even the implied warranty of
+>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+>GNU General Public License for more details.
+>
+>You should have received a copy of the GNU General Public License
+>along with this program.  If not, see <http://www.gnu.org/licenses/>
+
+### Contributions
+
+Pull requests are welcome.
